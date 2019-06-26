@@ -39,22 +39,49 @@ function addstats() {
 //
 addstats()
 console.log (statTotal)
+
+let adjust;
+
 function statAdjustMinus(statTotal){
-  let adjust = statTotal  - 69
+  adjust = statTotal  - 69
   console.log(adjust)
   return adjust
 }
 function statAdjustPlus(statTotal){
-  let adjust = 69 - statTotal  
+  adjust = 69 - statTotal  
   console.log(adjust)
   return adjust 
 }
+let fixer;
+function round(){
+  fixer = Math.ceil(adjust / 6)
+ console.log(fixer)
+ return fixer
+}
+
+
 if (statTotal > 69)
 {
 statAdjustMinus(statTotal)
+round()
+stats.dex = stats.dex - fixer
+stats.str =stats.str - fixer
+stats.int =stats.int - fixer
+stats.wis =stats.wis - fixer
+stats.con =stats.con - fixer
+stats.cha =stats.cha - fixer
+console.log ("dex " + stats.dex + " str " + stats.str + " int " + stats.int + " wis " + stats.wis + " con " + stats.con + " cha " + stats.cha);
 }
 else if (statTotal < 69) {
   statAdjustPlus(statTotal)
+  round()
+  stats.dex = stats.dex + fixer
+stats.str =stats.str + fixer
+stats.int =stats.int + fixer
+stats.wis =stats.wis + fixer
+stats.con =stats.con + fixer
+stats.cha =stats.cha + fixer
+console.log ("dex " + stats.dex + " str " + stats.str + " int " + stats.int + " wis " + stats.wis + " con " + stats.con + " cha " + stats.cha);
 }
 else{
   console.log(statTotal)
