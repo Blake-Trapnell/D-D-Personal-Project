@@ -17,22 +17,22 @@ while (statTotal < 69) {
   if (fixer < .1666 && stats.dex < 16) {
     stats.dex++
   }
-  else if (fixer > .1666 && fixer < .3333 && stats.str < 18) {
+  else if (fixer > .1666 && fixer < .3333 && stats.str < 16) {
     stats.str++
   }
-  else if (fixer > .3333 && fixer < .5 && stats.wis < 18) {
+  else if (fixer > .3333 && fixer < .5 && stats.wis < 16) {
     stats.wis++
   }
-  else if (fixer > .5 && fixer < .6666 && stats.int <18) {
+  else if (fixer > .5 && fixer < .6666 && stats.int <16) {
     stats.int++
   }
-  else if (fixer > .6666 && fixer < .8333 && stats.con < 18) {
+  else if (fixer > .6666 && fixer < .8333 && stats.con < 16) {
     stats.con++
   }
-  else if (fixer > .8333 && stats.cha < 18){
+  else if (fixer > .8333 && stats.cha < 16){
     stats.cha++
   }
   else {}
   addstats()
 }
-console.log("dex " + stats.dex + " str " + stats.str + " int " + stats.int + " wis " + stats.wis + " con " + stats.con + " cha " + stats.cha);
+console.log(stats);
