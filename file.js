@@ -43,6 +43,9 @@ while (statTotal < 69) {
 }
 // Now that we have our stats, we can look into races and a class for our random character.
 //the Second step in our process will be to find the highest stat.
+//
+
+
 
 function findHeighestStat() {
   if (stats.dex > stats.str && stats.dex > stats.wis && stats.dex > stats.int && stats.dex > stats.cha) {
@@ -66,10 +69,10 @@ function findHeighestStat() {
     return highestStat
   }
 }
-findHeighestStat()
+//findHeighestStat()
 console.log(highestStat)
 //now we can assign our class and race based on our heighest stat
-
+findHeighestStat()
 function dexClasses() {
   let rando = Math.random();
   if (stats.wis > 10 && highestStat == `dex`) {
@@ -136,6 +139,3 @@ else if (highestStat == `cha`){
 else {ddClass = `wizard`}
 console.log (`                          ${ddClass}`)
 console.log (stats)
-
-
-
