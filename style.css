@@ -60,4 +60,9 @@ button {
     width: 10vw;
     font-family: "Ubuntu";
     font-size: 1.5rem;
+    border-radius: 10vw;
+    border: none;
+    border: 2px 2px 1px rgb(12, 29, 39);
+    background-image: linear-gradient(to right, rgb(43, 139, 199), rgba(197, 85, 147, 0.582))
+    
 }
