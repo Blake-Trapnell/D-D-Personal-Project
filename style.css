@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    height: 140vh;
+    height: 200vh;
     width: 100vw;
     background-color: whitesmoke;
     display: flex;
@@ -49,13 +49,13 @@ header {
 main {
     height: 100%;
     width:  100%;
-    background-color: lightblue;
+    background-color: rgb(6, 109, 143);
     display: flex;
     justify-content: space-between;
 
 }
 .image {
-    height: 100%;
+    height: 100vh ;
     width: 20%;
     background-color: aquamarine;
     
@@ -64,13 +64,19 @@ main {
     height: 100%;
     width: 60%;
     background-color: whitesmoke; 
+    background-image: url(/pictures/5E_CharacterSheet_Fillable-1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .logo {
     height: 100%;
     width: 20%;
     background-color: lightgreen;
     display: flex;
-    align-items: center;
+
 
 }
 .nav {
@@ -78,7 +84,7 @@ main {
 }
 #right {
     display: flex;
-    align-content: flex
+    align-content: flex;
     align-items: baseline;
 
 }
@@ -98,4 +104,28 @@ main {
     position: relative;
     height: 4vh;
     left: 5vw;
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: azure;
+}
+.charactersheetmain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.charactersheetheader {
+    height: 13%;
+    width:  100%;
+    border: 2px black solid;
+}
+.charactersheetinfo {
+    height: 87%;
+    width: 32%;
+    border: 2px black;
+    border-style: solid;
 }
