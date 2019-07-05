@@ -30,39 +30,72 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    line-height: 1;
-    height: 100vh;
+    height: 140vh;
     width: 100vw;
-    background-image: url("The adventurers.jpg");
-    background-size: cover;
-}
-
-.header {
-    height: 10vh;
-    width: 99vw;
-    box-shadow: 4px 2px 3px rgb(24, 24, 24);
+    background-color: whitesmoke;
     display: flex;
-    align-items: baseline;  
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
 
 }
-.box {
+header {
     height: 10vh;
-    width: 10vh;
-    position: absolute;
-    background-image: url("Aces DD creator.png");
-    background-size: cover;
+    width: 100vw;
+    background-color: lightyellow;
+    display: flex;
+    justify-content: space-between;
 }
-nav {
-    position: relative;
-    left: 10vh;
+main {
+    height: 100%;
+    width:  100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+
 }
-button {
-    width: 10vw;
-    font-family: "Ubuntu";
-    font-size: 1.5rem;
-    border-radius: 10vw;
-    border: none;
-    border: 2px 2px 1px rgb(12, 29, 39);
-    background-image: linear-gradient(to right, rgb(43, 139, 199), rgba(197, 85, 147, 0.582))
+.image {
+    height: 100%;
+    width: 20%;
+    background-color: aquamarine;
     
+}
+.content  {
+    height: 100%;
+    width: 60%;
+    background-color: whitesmoke; 
+}
+.logo {
+    height: 100%;
+    width: 20%;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+
+}
+.nav {
+
+}
+#right {
+    display: flex;
+    align-content: flex
+    align-items: baseline;
+
+}
+.topright {
+    height: 7vh;
+    width : 7vh;
+    background-color: rgb(133, 150, 245);
+    box-shadow: 2px 2px 3px rgb(43, 43, 43);
+    border-radius: 5px;
+    font-family: "Ubuntu";
+    display: flex;
+    justify-content: center;
+        align-items: center;
+    
+}
+#home {
+    position: relative;
+    height: 4vh;
+    left: 5vw;
 }
